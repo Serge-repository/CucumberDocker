@@ -1,4 +1,4 @@
-@Abc
+@Smoke
 Feature: Correct and incorrect login using scenario outline
 
   Scenario Outline: Login as a authenticated user
