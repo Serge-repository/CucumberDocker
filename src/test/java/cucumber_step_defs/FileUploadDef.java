@@ -10,8 +10,8 @@ import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static cucumber_step_defs.RunnerTest.driver;
-import static cucumber_step_defs.RunnerTest.wait;
+import static cucumber_step_defs.DriverInitializer.driver;
+import static cucumber_step_defs.DriverInitializer.wait;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
