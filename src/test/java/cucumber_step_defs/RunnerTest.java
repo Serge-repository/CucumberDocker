@@ -40,17 +40,19 @@ public class RunnerTest {    //обязательно название клас�
     private final Browser browser = Browser.getBrowser();
     private String host;
 
-//    @Before
-//    public void beforeMethod() throws MalformedURLException {
-//        host = "http://localhost:4444/wd/hub";
-//        startDriver(browser, host);
-//    }
-
-    @Before    // Uncomment for local run
+// Uncomment for selenium grid run
+    @Before
     public void beforeMethod() throws MalformedURLException {
-        host = null;
+        host = "http://localhost:4444/wd/hub";
         startDriver(browser, host);
     }
+
+// Uncomment for local run
+//    @Before
+//    public void beforeMethod() throws MalformedURLException {
+//        host = null;
+//        startDriver(browser, host);
+//    }
 
     @After
     public void afterScenario() {
