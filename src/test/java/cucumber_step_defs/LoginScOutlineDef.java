@@ -1,6 +1,5 @@
 package cucumber_step_defs;
 
-import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,11 +10,6 @@ import static cucumber_step_defs.RunnerTest.driver;
 import static org.junit.Assert.assertEquals;
 
 public class LoginScOutlineDef {
-
-    @After
-    public void afterScenario() {
-        driver.quit();
-    }
 
     @Given("homepage opened")
     public void homepageOpened() {
