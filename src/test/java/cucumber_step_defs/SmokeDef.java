@@ -5,6 +5,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static cucumber_step_defs.DriverInitializer.driver;
 import static org.junit.Assert.assertEquals;
@@ -46,6 +48,8 @@ public class SmokeDef {
     public void userClickOnTableDemoLink() {
         driver.findElement(By.xpath("//ul[@class='nav navbar-nav']/li")).click();
         driver.findElement(By.xpath("//a[contains(@href,'table')]")).click();
+        new WebDriverWait(driver, 10).until(
+                webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
     }
 
     @Then("title of tablePage is {string}")

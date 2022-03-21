@@ -40,8 +40,8 @@ public class FileUploadDef {
         driver.findElement(By.cssSelector("input.upload_txt")).sendKeys(filePath);
     }
 
-    @And("click {string} button")
-    public void clickButton(String submitButton) {
+    @And("click submit button")
+    public void clickButton() {
         driver.findElement(By.cssSelector("button#submitbutton")).click();
     }
 
