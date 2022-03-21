@@ -30,18 +30,18 @@ public class DriverInitializer {
     private String host;
 
 // Uncomment for selenium grid run (use Cucumber.java @Before)
-//    @Before
-//    public void beforeMethod() throws MalformedURLException {
-//        host = "http://localhost:4444/wd/hub";
-//        startDriver(browser, host);
-//    }
-
-// Uncomment for local run (use Cucumber.java @Before)
     @Before
     public void beforeMethod() throws MalformedURLException {
-        host = null;
+        host = "http://localhost:4444/wd/hub";
         startDriver(browser, host);
     }
+
+// Uncomment for local run (use Cucumber.java @Before)
+//    @Before
+//    public void beforeMethod() throws MalformedURLException {
+//        host = null;
+//        startDriver(browser, host);
+//    }
 
     @After
     public void afterScenario() {
