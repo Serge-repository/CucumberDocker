@@ -18,3 +18,15 @@ services:
 ## Volume mapping for file DOWNLOADS
     volumes:
       - .\target\downloads:/home/seluser/Downloads
+  ### Adding OUR DOCKER IMAGE RUN
+  cucumber-bdd:
+    image: serge11elzar/cucumber_docker
+    depends_on:
+      - chrome
+    environment:
+      - browser=chrome
+      - HUB_HOST=hub
+      - CUCUMBER_OPTIONS=classpath:features
+    volumes:
+#      - .\target\allure-results:/usr/share/cucumber_docker/target/allure-results
+      - .\target\run-results:/usr/share/cucumber_docker/test-output

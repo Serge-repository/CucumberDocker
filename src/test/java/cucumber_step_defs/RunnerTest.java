@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-//        tags = "@Smoke",           //указав тег, можем тут же запускать через TestRunner
+        tags = "@Smoke",           //указав тег, можем тут же запускать через RunnerTest
+
         // Uncomment for local run
 //        features = "src/test/resources/features", // Можно указать несколько папок, например: features = {«src/test/features», «src/test/feat»}
         // Uncomment for selenium grid run
