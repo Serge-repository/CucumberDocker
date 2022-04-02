@@ -13,7 +13,7 @@ ADD healthcheck.sh healthcheck.sh
 
 ## To run without healthcheck using ip or container
 # Always use ":" because all containers will be running in alpine
-# ENTRYPOINT java -cp MavenDocker.jar:MavenDocker-tests.jar:libs/* -Dbrowser=$browser -DHUB_HOST=$HUB_HOST -Dcucumber.options=$CUCUMBER_OPTIONS org.junit.runner.JUnitCore cucumber_step_defs.RunnerTest
+# ENTRYPOINT java -cp MavenDocker.jar:MavenDocker-tests.jar:libs/* -Dbrowser=$browser -DHUB_HOST=$HUB_HOST -Dcucumber.options=$CUCUMBER_OPTIONS org.junit.runner.JUnitCore RunnerTest
 
 ## To run with healthcheck (only if run from simple docker-compose up command)
 ENTRYPOINT sh healthcheck.sh
