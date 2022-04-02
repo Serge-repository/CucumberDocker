@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "classpath:features",
 
         glue = "cucumber_step_defs",  // Можно указать несколько пакетов, например, так: glue = {«ru.savkk.test», «ru.savkk.hooks»}
-        plugin = {"pretty", "html:target/htmlreports"}
+        plugin = {"pretty", "html:target/html_reports"}
 )
 
 public class RunnerTest {    //обязательно название класа заканчивается на Test

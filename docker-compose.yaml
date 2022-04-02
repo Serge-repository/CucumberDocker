@@ -29,4 +29,4 @@ services:
       - CUCUMBER_OPTIONS=classpath:features
     volumes:
 #      - .\target\allure-results:/usr/share/cucumber_docker/target/allure-results
-      - .\target\run-results:/usr/share/cucumber_docker/test-output
+      - .\target\html_reports:/usr/share/cucumber_docker/output
