@@ -13,8 +13,7 @@ import org.junit.runner.RunWith;
 
         glue = "cucumber_step_defs",  // Можно указать несколько пакетов, например, так: glue = {«ru.savkk.test», «ru.savkk.hooks»}
         plugin = {"pretty", "html:target/cucumber-reports/html_reports",
-                "json:target/cucumber-reports/CucumberTestReport.json",
-                "rerun:target/cucumber-reports/rerun.txt"
+                "json:target/cucumber-reports/CucumberTestReport.json"
         }
 )
 
