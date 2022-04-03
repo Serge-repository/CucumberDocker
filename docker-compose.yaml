@@ -27,6 +27,8 @@ services:
       - browser=chrome
       - HUB_HOST=hub
       - CUCUMBER_OPTIONS=classpath:features
+#      TO RUN A SUITE OR EXACT FEATURE
+#      - CUCUMBER_OPTIONS=classpath:features/dragAndDrop.feature --tags @Smoke
     volumes:
 #      - .\target\allure-results:/usr/share/cucumber_docker/target/allure-results
-      - .\target\html_reports:/usr/share/cucumber_docker/output
+      - .\target\cucumber-reports:/usr/share/cucumber_docker/target/cucumber-reports
