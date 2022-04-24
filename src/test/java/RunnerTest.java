@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags = "@Smoke",           //указав тег, можем тут же запускать через RunnerTest
+//        tags = "@Smoke",           //указав тег, можем тут же запускать сьют ЛОКАЛЬНО через RunnerTest
 
         // Uncomment for local run
 //        features = "src/test/resources/features", // Можно указать несколько папок, например: features = {«src/test/features», «src/test/feat»}
